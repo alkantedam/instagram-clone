@@ -10,9 +10,12 @@
 
 <%= form_for @user do |f| %>
     
-    <%= f.text_field :login %>
-    <%= f.text_field :email  %>
-    <%= f.password_field :password %>
+    <%= f.text_field :login %><br>
+    <%= f.text_field :email  %><br>
+    <%= f.password_field :password %><br>
+    <%= f.file_field :avatar %>
     <%= f.submit "Sign up" %>
+    
 
 <% end %>
+
